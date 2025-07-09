@@ -11,6 +11,9 @@ namespace Hospital_Inventory_MVC_App.Models
         [StringLength(100, ErrorMessage = "Name cannot be longer than 100 characters.")]
         public string Name { get; set; }
         [Required]
+        [StringLength(100, ErrorMessage = "Department cannot be longer than 100 characters.")]
+        public string Department { get; set; }
+        [Required]
         [Range(0, int.MaxValue, ErrorMessage = "Quantity cannot be negative.")]
         public int Quantity { get; set; }
         [Required]
