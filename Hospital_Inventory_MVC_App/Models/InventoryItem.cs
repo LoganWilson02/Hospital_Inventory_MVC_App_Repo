@@ -25,7 +25,7 @@ namespace Hospital_Inventory_MVC_App.Models
         [Required]
         public double TotalPrice
         {
-            get { return PricePerUnit * Quantity; }
+            get { return Math.Round(PricePerUnit * Quantity, 2); }
         }
         [Required]
         public DateTime LastUpdated { get; set; } = DateTime.Now;
