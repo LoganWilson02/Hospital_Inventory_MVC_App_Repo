@@ -12,12 +12,19 @@ namespace Hospital_Inventory_MVC_App.Data.Service
         {
             _context = context;
         }
+
+        /*  Add a new inventory item to the database.
+         *  This method adds the item to the DbSet and saves changes asynchronously.
+         */
         public async Task Add(InventoryItem item)
         {
             _context.InventoryItems.Add(item);
             await _context.SaveChangesAsync();
         }
 
+        /*  Delete an inventory item by its ID.
+         *  This method retrieves the item from the database, removes it from the DbSet, and saves changes asynchronously.
+         */
         public async Task Delete(int id)
         {
             var InventoryItem = await _context.InventoryItems.SingleOrDefaultAsync(item => item.Id == id);
@@ -28,6 +35,9 @@ namespace Hospital_Inventory_MVC_App.Data.Service
             }
         }
 
+        /*  Edit an existing inventory item.
+         *  This method retrieves the item by its ID, updates its properties, and saves changes asynchronously.
+         */
         public async Task<InventoryItem> Edit(InventoryItem item)
         {
             var itemToEdit = await _context.InventoryItems.SingleOrDefaultAsync(i => i.Id == item.Id);
@@ -49,6 +59,9 @@ namespace Hospital_Inventory_MVC_App.Data.Service
             return itemToEdit;
         }
 
+        /*  Get all inventory items from the database.
+         *  This method retrieves all items, orders them by department, and returns them as a list.
+         */
         public async Task<IEnumerable<InventoryItem>> GetAll()
         {
             var InventoryItems = await _context.InventoryItems.OrderBy(item => item.Department).ToListAsync();
