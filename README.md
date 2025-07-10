@@ -24,9 +24,9 @@ Halifax Health Inventory Tracker is a web application designed to internally man
 
 ## Use Instructions
 
-FIRST ** Go to 'https://halifaxhealthinventorytracker.azurewebsites.net/'.
+**FIRST Go to 'https://halifaxhealthinventorytracker.azurewebsites.net/'.**
 
-THEN ** Use the Navigation bar at the top of the page to go to the 'Inventory Items' page to view all items OR the 'Add an Item' page to add a new one.
+**THEN Use the Navigation bar at the top of the page to go to the 'Inventory Items' page to view all items OR the 'Add an Item' page to add a new one.**
 
 ## Notes
 - User accounts are scaffolded but not required for inventory management. The authentication system can be easily enabled or extended.
