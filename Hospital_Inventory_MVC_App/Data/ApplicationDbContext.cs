@@ -10,6 +10,6 @@ namespace Hospital_Inventory_MVC_App.Data
 
         }
 
-        DbSet<Models.Inventory_Item> Inventory_Items { get; set; }
+        public DbSet<Models.InventoryItem> InventoryItems { get; set; }
     }
 }

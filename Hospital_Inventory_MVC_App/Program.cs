@@ -1,4 +1,5 @@
 using Hospital_Inventory_MVC_App.Data;
+using Hospital_Inventory_MVC_App.Data.Service;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,6 +15,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddScoped<IInventoryItemsService, InventoryItemService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
