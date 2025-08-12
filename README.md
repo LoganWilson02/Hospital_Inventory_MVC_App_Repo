@@ -1,6 +1,12 @@
 # Halifax Health Inventory Tracker
 
+## NOTE
+
+The Azure Hosting of this Web App has been paused for monetary purposes, however all of the code is still valid to puruse and it can be downloaded and run locally with minor tweaking!
+
 ## Overview
+
+This is a cloud hosted web app made within two days (very short scope proof of concept project).
 
 Halifax Health Inventory Tracker is a web application designed to internally manage and track inventory items efficiently. The application allows users to add, edit, and delete inventory items, and view all items in a sortable list. While user authentication was not fully implemented as it wasn't within the required specifications, it was added in an incomplete form to show how easily the project can be elevated and improved.
 
