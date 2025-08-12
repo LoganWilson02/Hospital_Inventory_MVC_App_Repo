@@ -34,7 +34,7 @@ Halifax Health Inventory Tracker is a web application designed to internally man
 
 **THEN Use the Navigation bar at the top of the page to go to the 'Inventory Items' page to view all items OR the 'Add an Item' page to add a new one.**
 
-## Notes
+## Comments
 - User accounts are scaffolded but not required for inventory management. The authentication system can be easily enabled or extended.
 - The app uses modern ASP.NET Core best practices, including dependency injection and separation of concerns.
 
