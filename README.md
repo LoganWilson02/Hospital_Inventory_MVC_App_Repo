@@ -2,7 +2,7 @@
 
 ## NOTE
 
-The Azure Hosting of this Web App has been paused for monetary purposes, however all of the code is still valid to puruse and it can be downloaded and run locally with minor tweaking!
+The Azure Hosting of this Web App has been paused for monetary purposes, however all of the code is still valid to puruse and it can be downloaded and run locally with minor tweaking! Keep that in mind while going through the rest of this document noting that any instructions involving the publicly hosted link are temporarily unavailable.
 
 ## Overview
 
